@@ -1,0 +1,529 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(248, 242, 242);
+}
+/*  rgb(101, 98, 98) */
+
+.top-nav{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+.top-nav img{
+  width: 150px;
+}
+.main-box{
+  display: flex;
+  gap: 20px;
+}
+.search-bar{
+  padding: 5px 20px;
+  width: 300px;
+}
+.list{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.search{
+  border: 2px solid #eabb75;
+  padding: 5px;
+  border-radius: 5px;
+}
+.input{
+  background: none;
+  border: none;
+}
+.listing2{
+  box-shadow: 2px 2px 5px 0 rgb(169, 166, 166);
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+
+/* ----Input Outline--- */
+.input{
+  outline: none;
+  background-color: transparent;
+}
+
+/* ----navigation---- */
+.navigation{
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support{
+  text-align: right;
+}
+.support h3{
+  color: #eabb75;
+}
+
+.nav-bar{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.browse{
+  color: white;
+  background-color: #ff7955;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-links{
+  display: flex;
+}
+.nav-links li{
+  list-style: none;
+  padding: 0 10px;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: black;
+}
+.nav-bar ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background:  #ff7955;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+  width: 100%;
+}
+
+
+/* ----Phase 1  start---- */
+.phase1{
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.box{
+  border-radius: 10px;
+}
+
+/* First box start*/
+.box1{
+  background-image: url(https://img.freepik.com/free-photo/cutting-board-with-oranges-lemons-it_1340-26317.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  box-shadow: 0 0 5px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #ff7955;
+}
+.box1 h1{
+  font-size: 60px;
+}
+
+.search-box1{
+  background-color: white;
+  width: fit-content;
+  margin: 40px 0;
+  border-radius: 50px;
+}
+.email, .subscribe{
+  padding: 15px 30px;   
+  border: none;
+}
+.subscribe{
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(78, 165, 78);
+}
+.email{
+  border-radius: 50px;
+}
+/* First Box end*/
+
+
+/* Second box start*/
+.box2{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://img.freepik.com/free-photo/close-up-juicy-fruits-juice-jar-against-black-background_23-2147968649.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 0 5px 0 black;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+.box2 h1{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.btn1{
+  background-color: white;
+  color: black;
+}
+/* Second box end */
+
+
+/* ----Phase 1 end---- */
+
+
+/* ----phase 2 start---- */
+.shopping{
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.shop1{
+  background-image: url(https://img.freepik.com/premium-photo/eco-friendly-packaging-marked-co2-neutral-paper-recycling-zero-waste-natural-products-concept_531397-1029.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.shop2{
+  background-image: url(https://img.freepik.com/free-photo/fresh-fruit-plate-isolated-white_1232-1959.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.shop3{
+  background-image: url(https://img.freepik.com/free-photo/food-assortment-with-cheeseburger-nuggets_23-2148314184.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.box3{
+  background-color: darkslategray;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 ;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.box3 h1{
+  margin-bottom: 60px ;
+}
+.box3 .btn1{
+  background-color: black;
+  color: white;
+  justify-self: right;
+  justify-content: end;
+}
+/* ----phase 2 end---- */
+
+
+
+/* ----phase 3 start---- */
+
+.top-products{
+  width: 90%;
+  margin: 50px auto;
+}
+.product-col{
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.products{
+  box-shadow: 0 0 5px 0 ;
+  border-radius: 10px;
+  display: grid;
+  width: 100%;
+  background-color: white;
+}
+.items{
+  
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 200px;
+  padding: 5px 0;
+  background-color: aliceblue;
+  border-radius: 10px 10px 0 0 ;
+}
+.item1{
+  background-image: url(https://i.pinimg.com/236x/ae/2d/65/ae2d65d73a98f127fdc0b320b2482c8b.jpg);
+}
+.item2{
+  background-image: url(https://i.pinimg.com/236x/a8/49/0a/a8490a44060ede8d0f24bbae64988cd5.jpg);
+}
+.item3{
+  background-image: url(https://i.pinimg.com/236x/13/10/f5/1310f5b502803f3276f15c7c4298611f.jpg);
+}
+.item4{
+  background-image: url(https://i.pinimg.com/236x/d0/45/e7/d045e7e175896bc2d401398b224f5f95.jpg);
+}
+.item5{
+  background-image: url(https://i.pinimg.com/236x/da/29/54/da29549b7fd367669b7d8502d9d0028c.jpg);
+}
+
+
+.slash{
+  border-radius: 10px 0 ;
+  padding: 5px 10px;
+  background-color: rgb(57, 128, 57);
+}
+.product2{
+  background-color: rgb(230, 57, 57);
+}
+.product3{
+  background-color: rgb(110, 221, 184);
+}
+
+.about-product{
+  padding: 10px;
+  line-height: 20px;
+}
+#color-change{
+  color: aquamarine;
+}
+
+.price{
+  padding: 10px;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#reduce-font{
+  font-size: x-small;
+  color: #bfbdbd;
+}
+/* 114, 178, 114) */
+#cart{
+  background-color:#94bdba;
+  padding: 4px 10px;
+  border-radius: 3px;
+  color:#3e6664;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* ----Deals of the Day---- */
+
+
+.deals{
+  width: 90%;
+  margin: 50px auto;
+}
+
+.deals-col{
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col{
+  background-color: #3e6664;
+  border-radius: 10px;
+  padding: 20px;
+}
+.col{
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.col-1{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://img.freepik.com/free-photo/cheeseburger-with-french-fries_140725-6072.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+}
+.col-2{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://img.freepik.com/free-photo/flat-lay-delicious-chocolate-chips-cookies_23-2149702518.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+}
+.col-3{
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://img.freepik.com/free-photo/front-view-biscuits-stacked-top-each-other-blue-background_140725-132180.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+}
+.col-4{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://img.freepik.com/free-photo/dark-chocolate-bar-wrapped-golden-foil-paper-white-backdrop_23-2147898399.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+}
+.col-top{
+  height: 150px;
+}
+
+.col-btn{
+  text-align: center;
+  margin-top: 60%;
+}
+.deal-btn{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.col-1 h1{
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+}
+
+.col-2 h1{
+  font-size: 40px;
+  margin: auto;
+  text-align: right;
+  padding-top: 20px;
+  color: white;
+}
+
+.col-3 h1{
+  text-align: right;
+  color: white;
+}
+
+.col-4{
+  text-align: center;
+}
+.col4-btn{
+  background-color: black;
+  color: white;
+}
+
+
+
+/* ----Sales---- */
+.sales{
+  width: 90%;
+  margin: 50px auto;
+}
+
+.sales-col{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.sales1{
+  box-shadow: 0 0 5px 0 black;
+  background-color: white;
+}
+
+.price-tag{
+  background-color: green;
+  padding: 40px 20px;
+  border-radius: 50%;
+  color: white;
+}
+.cda-1{
+  padding: 50px 10px;
+  padding-bottom: 45%;
+  background-image: url(https://img.freepik.com/free-photo/presentation-retailer-package-set-craft-paper-bag-big-pouch-small-container-take-away-glass-with-cap_346278-890.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.sales1 .bottom{
+  background-image: url(https://img.freepik.com/free-photo/ice-cream-with-fruits-table_140725-9833.jpg?size=626&ext=jpg&ga=GA1.1.746289648.1661586601&semt=ais);
+}
+.cda-1 .tag2{
+  background-color: chocolate;
+}
+.cda-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.cda-2 h3{
+  margin-bottom: 8px;
+  color: green;
+}
+.nn h3{
+  color: red;
+}
+
+.sales-btn{
+  background-color: black;
+  padding: 10px 30px;
+  font-size: smaller;
+}
+
+
+
+
+
+/* ----inquiry---- */
+.inquiry{
+  background-color: #eabb759b;
+  margin-top: 150px;
+}
+.inquries{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+  align-items: center;
+}
+.inquries h2{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.inquries-btn{
+  border-radius: 0;
+  padding: 14px;
+}
+.inquries-bar{
+  outline: none;
+  border: none;
+  padding: 15px 10px;
+  width: 37%;
+  background-color: #eabb75;
+}
+.inquiry-col{
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4,1fr);
+  text-align: left;
+}
+
+.inquiry li{
+  list-style: none;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* ----footer---- */
+footer{
+  border-top: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+  background-color: #eabb759b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
